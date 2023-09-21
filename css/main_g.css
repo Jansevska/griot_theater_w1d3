@@ -1,0 +1,185 @@
+.container {
+    background-image: url("images\theater-image-background.png");
+    background-position: relative;
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 0.7fr 2.5fr 0.8fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "nav nav nav"
+    "blank content blank2"
+    "footer footer footer";
+  }
+  
+  .nav {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 71.1% 28.9%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title title title title"
+      "h-item1 h-item2 h-item3 h-item4 h-item5";
+    grid-area: nav;
+    position: absolute;
+  }
+  
+  .h-item1 { 
+    grid-area: h-item1; 
+    position: absolute;
+    /* display: flex; */
+    color: rgb(146, 142, 142);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .h-item2 { 
+    grid-area: h-item2;
+    position: absolute;
+    position: absolute;
+    /* display: flex; */
+    color: rgb(146, 142, 142);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none; 
+  }
+  
+  .title { 
+    grid-area: title; 
+    position: absolute;
+    /* width: 100vw;
+    height: 71%;
+    display: grid; */
+    color: gainsboro;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    word-spacing: 0.8em;
+    text-transform: uppercase;
+    align-self: center;
+    justify-self: center;
+
+  }
+  
+  .h-item3 { 
+    grid-area: h-item3;
+    position: absolute;
+    /* display: flex; */
+    color: rgb(146, 142, 142);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none; 
+  }
+  
+  .h-item4 { 
+    grid-area: h-item4;
+    position: absolute;
+    /* display: flex; */
+    color: rgb(146, 142, 142);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none; 
+  }
+  
+  .h-item5 { 
+    grid-area: h-item5;
+    position: absolute;
+    /* display: flex; */
+    color: rgb(146, 142, 142);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none; 
+  }
+  
+  .content {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 30px 1fr 1fr 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "f-shows f-shows f-shows f-shows f-shows"
+      "drop-label drop-label drop-label drop-label drop-label"
+      "show1 show2 show3 show4 show5"
+      "show1 show2 show3 show4 show5"
+      "show1 show2 show3 show4 show5";
+    grid-area: content;
+    position: absolute;
+  }
+  
+  .f-shows { 
+    grid-area: f-shows;
+    justify-items: center;
+    align-items: center; 
+  }
+  
+  .drop-label { 
+    grid-area: drop-label; 
+  }
+  
+  .show1 { 
+    grid-area: show1;
+  }
+  
+  .show2 { 
+    grid-area: show2; 
+  }
+  
+  .show3 { 
+    grid-area: show3; 
+  }
+  
+  .show4 { 
+    grid-area: show4; 
+  }
+  
+  .show5 { 
+    grid-area: show5; 
+  }
+  
+  .footer {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 20px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "map info social"
+      "map info social"
+      "map info social"
+      "copy copy copy";
+    grid-area: footer;
+  }
+  
+  .map { 
+    grid-area: map; 
+  }
+  
+  .copy { 
+    grid-area: copy; 
+  }
+  
+  .info { 
+    grid-area: info; 
+  }
+  
+  .social { 
+    grid-area: social; 
+  }
+  
+  .blank { 
+    grid-area: blank; 
+  }
+  
+  .blank2 { 
+    grid-area: blank2; 
+  }
+  
